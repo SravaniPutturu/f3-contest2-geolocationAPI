@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather Api</h1>
+      <button id="fetch-btn" onclick="wether()">Fetch Data</button>
+    </div>
+      <div class="latlong">
+        <span id="lat"></span>
+        <span id="long"></span>
+      </div>
+      <div id="map"></div>
+      
+
+        <div id="weather"  style="border: 1px solid black;">
+          <h2 style="display: none; font-size: 40px;">Weather Data</h2>
+
+          <p id="location"></p>
+          <div id="row">
+            <p id="Lat"></p>
+            <p id="Long"></p>
+          </div>
+          <p id="timeZone"></p>
+  
+          <p id="wind-speed"></p>
+          <p id="pressure"></p>
+          <p id="humidity"></p>
+          <p id="windDirection"></p>
+          <p id="uvindex"></p>
+  
+          <p id="pressure"></p>     
+          
+        </div>
+      
+
+      <script src="script.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDizAFv7a7-Klujez8RLm3xU5lRe7JKUh8"></script>
+
+   
+  </body>
+</html>
